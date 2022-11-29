@@ -87,7 +87,10 @@ const fetchListData = async () => {
     deleteIcon.setAttribute("src", "https://i.stack.imgur.com/k59em.png");
     deleteIcon.setAttribute("alt", "");
     deleteIcon.setAttribute("class", "dots");
-    deleteIcon.onclick = () => handleDeleteEntry(item);
+    deleteIcon.onclick = (event) => {
+      event.stopPropagation();
+      handleDeleteEntry(item);
+    };
 
     const avatar = document.createElement("img");
     avatar.setAttribute("src", item.image);
@@ -99,6 +102,17 @@ const fetchListData = async () => {
     cardContainer.appendChild(avatar);
     cardContainer.appendChild(deleteIcon);
     cardContainer.appendChild(container);
+    cardContainer.onclick = function () {
+      modal.style.display = "block";
+
+      API.value = item.API.value;
+      Cors.value = item.Cors;
+      Category.value = item.Category;
+      HTTPS.value = item.HTTPS === true ? "yes" : "no";
+      description.value = item.Description;
+      link.value = item.Link;
+      img.value = item.image;
+    };
     // cardContainer.onclick = () => handleUpdateEntry(item);
 
     wrapList.appendChild(cardContainer);
