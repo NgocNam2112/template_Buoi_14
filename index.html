@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
     <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,148 +25,16 @@
                 </button>
           </div>
     </header>
-    <main class="wrap_list">
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
+    <main class="wrap_list" id="wrap_list">
 
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://thenounproject.com/api/private/icons/5179632/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjfzkbBDChzL5GBcwNdCIm4Pl2KLMCxe-rukFzLT27l4B1CY9ymJBdEsuZcYGZc7-iC5EALqMb1L3RspjP5u1iV7UuSg%3D%3D" alt="" class="dots">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4><b>John Doe</b></h4> 
-                <p>Architect & Engineer</p> 
-            </div>
-        </div>
     </main>
 
 
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" style="float: right; cursor: pointer;">&times;</span>
-            <form action="/action_page.php">
+            <p style="color: red; font-size:18px; display: none; text-align: center;" id="commonError">Please enter full field</p>
+            <form id="formContainer">
                 <div class="input__wrapper">
                     <div>
                         <label for="API">API</label>
@@ -186,8 +56,8 @@
                     <div>
                         <label for="HTTPS">HTTPS</label>
                         <select id="HTTPS" name="HTTPS">
-                            <option value="australia">yes</option>
-                            <option value="canada">no</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
                         </select>
                     </div>
                 </div>
