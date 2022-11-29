@@ -43,16 +43,24 @@ const handleDeleteEntry = async (item) => {
 };
 
 const handleCreateNewEntry = async () => {
-  const data = axios.post(BASE_URL, {
-    API: API.value,
-    Description: "send request",
-    HTTPS: true,
-    Cors: Cors.value,
-    Link: "dfd",
-    Category: "asdf",
-    image: "https://cataas.com/cat?t=sq&time=16692743002638",
-    Auth: "",
-  });
+  try {
+    const data = await axios.post(BASE_URL, {
+      API: API.value,
+      Description: description.value,
+      HTTPS: HTTPS.value === "yes" ? true : false,
+      Cors: Cors.value,
+      Link: link.value,
+      Category: Category.value,
+      image: img.value,
+      Auth: "",
+    });
+
+    if (data.status === 201) {
+      fetchListData();
+    }
+  } catch (error) {
+    console.log("error", error);
+  }
 };
 
 const fetchListData = async () => {
@@ -116,6 +124,7 @@ formContainer.addEventListener("submit", (event) => {
   if (handleValidateForm()) {
     return;
   }
+  handleCreateNewEntry();
 });
 
 fetchListData();
